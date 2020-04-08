@@ -1,0 +1,5 @@
+<h1 mat-dialog-title>Do you really want to delete this course?</h1>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Not really</button>
+  <button mat-button color="warn" [mat-dialog-close]="true">Yes, delete</button>
+</div>

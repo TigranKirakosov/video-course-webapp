@@ -7,15 +7,20 @@ import { Course } from 'src/app/shared/models/course.model';
   styleUrls: ['./courses-item.component.scss']
 })
 export class CoursesItemComponent implements OnInit {
-  @Input('course-data') course: Course;
-  @Output('course-deleted') courseDeleted = new EventEmitter<string>();
+  @Input() course: Course;
+  @Output() courseDelete = new EventEmitter<string>();
+  @Output() courseEdit = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onCourseEdit() {
+    this.courseEdit.emit(this.course.id);
+  }
+
   onCourseDelete() {
-    this.courseDeleted.emit(this.course.id);
+    this.courseDelete.emit(this.course.id);
   }
 
 }

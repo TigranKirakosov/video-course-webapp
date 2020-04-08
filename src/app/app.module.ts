@@ -22,6 +22,11 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatInputModule } from '@angular/material/input';
 import { SearchInputComponent } from './shared/search-input/search-input.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
+import { AddCourseComponent } from './courses/courses-item/dialogs/add-course/add-course.component';
+import { EditCourseComponent } from './courses/courses-item/dialogs/edit-course/edit-course.component';
+import { DeleteCourseComponent } from './courses/courses-item/dialogs/delete-course/delete-course.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,10 @@ import { MatButtonModule } from '@angular/material/button';
     CoursePageComponent,
     LoginComponent,
     LogoffButtonComponent,
-    SearchInputComponent
+    SearchInputComponent,
+    AddCourseComponent,
+    EditCourseComponent,
+    DeleteCourseComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +56,9 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     MatSliderModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

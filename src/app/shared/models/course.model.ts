@@ -6,4 +6,4 @@ export class Course {
     public duration: string,
     public description: string
   ) {}
-};
+}

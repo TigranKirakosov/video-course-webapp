@@ -9,7 +9,7 @@
   <div class="body-group">
     <p class="description">{{ course.description }}</p>
     <div class="buttons-group">
-      <button mat-stroked-button color="primary">Edit</button>
+      <button mat-stroked-button color="primary" (click)="onCourseEdit()">Edit</button>
       <button mat-stroked-button color="warn" (click)="onCourseDelete()">Delete</button>
     </div>
   </div>
