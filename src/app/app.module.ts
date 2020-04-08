@@ -17,6 +17,11 @@ import { LogoComponent } from './shared/logo/logo.component';
 import { CoursePageComponent } from './pages/course-page/course-page.component';
 import { LoginComponent } from './header/login/login.component';
 import { LogoffButtonComponent } from './header/logoff-button/logoff-button.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatInputModule } from '@angular/material/input';
+import { SearchInputComponent } from './shared/search-input/search-input.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -34,11 +39,16 @@ import { LogoffButtonComponent } from './header/logoff-button/logoff-button.comp
     LogoComponent,
     CoursePageComponent,
     LoginComponent,
-    LogoffButtonComponent
+    LogoffButtonComponent,
+    SearchInputComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MatSliderModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

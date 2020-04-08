@@ -1,0 +1,16 @@
+ul, li {
+  list-style: none;
+}
+
+.courses-panel {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.courses-list {
+  padding: 0;
+
+  &:nth-child(1) {
+    background-color: red;
+  }
+}

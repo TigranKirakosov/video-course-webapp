@@ -1,1 +1,16 @@
-<p>courses-item works!</p>
+<div class="course-item-container">
+  <div class="header-group">
+    <p class="course-title">{{ course.title }}</p>
+    <div class="time-group">
+      <p class="course-duration"><span><img src="../../../assets/images/icons/access_time-black-18dp.svg" alt="duration"></span> {{ course.duration }}</p>
+      <p class="course-date"><span><img src="../../../assets/images/icons/calendar_today-black-18dp.svg" alt="date"></span>{{ course.creationDate }}</p>
+    </div>
+  </div>
+  <div class="body-group">
+    <p class="description">{{ course.description }}</p>
+    <div class="buttons-group">
+      <button mat-stroked-button color="primary">Edit</button>
+      <button mat-stroked-button color="warn" (click)="onCourseDelete()">Delete</button>
+    </div>
+  </div>
+</div>
